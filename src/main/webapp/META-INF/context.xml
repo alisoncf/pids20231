@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context path="/gdoc">
-    <WatchedResource>WEB-INF/web.xml</WatchedResource>
-     
-    <Resource name="jdbc/gdoc" auth="Container"
-              type="javax.sql.DataSource"
-              maxActive="10" maxIdle="30" maxWait="10000"
-              username="root"
-              password="masterkey"
-              driverClassName="org.mariadb.jdbc.Driver"
-              url="jdbc:mariadb://localhost:3306/gdoc"/>
+  <WatchedResource>WEB-INF/web.xml</WatchedResource>
+  <Resource auth="Container" 
+            driverClassName="org.mariadb.jdbc.Driver" maxActive="10" maxIdle="30" maxWait="10000" 
+            name="jdbc/gdoc" password="masterkey" 
+            type="javax.sql.DataSource" 
+            url="jdbc:mariadb://localhost:3306/gdoc" username="root"/>
 </Context>

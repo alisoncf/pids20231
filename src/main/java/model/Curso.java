@@ -12,15 +12,9 @@ import lombok.NoArgsConstructor;
  *
  * @author Administrador
  */
-@Data @AllArgsConstructor @NoArgsConstructor
-public class Aluno {
-    private int id;
-    private Pessoa pessoa;
-    private Curso curso;
-    private int ano_entrada;
-    
-    
-    
-    
-    
+@Data
+@NoArgsConstructor @AllArgsConstructor
+public class Curso {
+    int id;
+    String nome;
 }
